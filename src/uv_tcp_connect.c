@@ -150,7 +150,7 @@ err:
 static int uvTcpConnectStart(struct uvTcpConnect *r, const char *address)
 {
     struct UvTcp *t = r->t;
-    struct sockaddr_in addr;
+    struct sockaddr_storage addr;
     int rv;
 
     rv = uvIpParse(address, &addr);

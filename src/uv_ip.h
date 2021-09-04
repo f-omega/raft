@@ -6,6 +6,6 @@
 #include <netinet/in.h>
 
 /* Split @address into @host and @port and populate @addr accordingly. */
-int uvIpParse(const char *address, struct sockaddr_in *addr);
+int uvIpParse(const char *address, struct sockaddr_storage *addr);
 
 #endif /* UV_IP_H */

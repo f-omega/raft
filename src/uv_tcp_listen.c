@@ -278,7 +278,7 @@ err:
 int UvTcpListen(struct raft_uv_transport *transport, raft_uv_accept_cb cb)
 {
     struct UvTcp *t;
-    struct sockaddr_in addr;
+    struct sockaddr_storage addr;
     int rv;
 
     t = transport->impl;
